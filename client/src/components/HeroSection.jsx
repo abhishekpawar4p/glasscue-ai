@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import LiveAssistantCard from './LiveAssistantCard';
 
 function HeroSection() {
@@ -20,13 +21,19 @@ function HeroSection() {
         </p>
 
         <div className="mt-9 flex flex-wrap gap-4">
-          <button className="rounded-2xl bg-gradient-to-r from-blue-400 to-purple-500 px-6 py-4 text-sm font-bold text-white transition hover:scale-105">
-            Start Building
-          </button>
+          <Link
+            to="/dashboard"
+            className="rounded-2xl bg-gradient-to-r from-blue-400 to-purple-500 px-6 py-4 text-sm font-bold text-white transition hover:scale-105"
+          >
+            Open Dashboard
+          </Link>
 
-          <button className="rounded-2xl border border-white/10 bg-white/10 px-6 py-4 text-sm font-bold text-white transition hover:bg-white/15">
+          <a
+            href="#features"
+            className="rounded-2xl border border-white/10 bg-white/10 px-6 py-4 text-sm font-bold text-white transition hover:bg-white/15"
+          >
             View Features
-          </button>
+          </a>
         </div>
       </div>
 
